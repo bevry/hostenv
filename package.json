@@ -1,0 +1,65 @@
+{
+  "title": "hostenv",
+  "name": "hostenv",
+  "version": "1.0.0",
+  "description": "Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, OpenShift, and other service environments",
+  "homepage": "https://github.com/bevry/hostenv",
+  "license": {
+    "type": "MIT"
+  },
+  "keywords": [
+    "port",
+    "hostname",
+    "env",
+    "environment",
+    "heroku",
+    "appfog",
+    "cloudfoundry",
+    "openshift",
+    "paas"
+  ],
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "npmdownloads": true,
+    "david": true,
+    "daviddev": true,
+    "gratipay": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://bevry.me/bitcoin",
+    "wishlist": "https://bevry.me/wishlist"
+  },
+  "author": "2015+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/bevry/hostenv/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bevry/hostenv.git"
+  },
+  "browsers": true,
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "projectz": "^0.5.0"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "clean": "./node_modules/.bin/cake clean",
+    "setup": "./node_modules/.bin/cake setup",
+    "compile": "./node_modules/.bin/cake compile",
+    "watch": "./node_modules/.bin/cake watch",
+    "verify": "./node_modules/.bin/cake verify",
+    "meta": "./node_modules/.bin/cake meta",
+    "prepare": "./node_modules/.bin/cake prepare",
+    "release": "./node_modules/.bin/cake release",
+    "test": "echo 'no tests needed'"
+  }
+}

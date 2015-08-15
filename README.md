@@ -8,7 +8,6 @@
 
 <!-- BADGES/ -->
 
-[![Build Status](https://img.shields.io/travis/bevry/hostenv/master.svg)](http://travis-ci.org/bevry/hostenv "Check this project's build status on TravisCI")
 [![NPM version](https://img.shields.io/npm/v/hostenv.svg)](https://npmjs.org/package/hostenv "View this project on NPM")
 [![NPM downloads](https://img.shields.io/npm/dm/hostenv.svg)](https://npmjs.org/package/hostenv "View this project on NPM")
 [![Dependency Status](https://img.shields.io/david/bevry/hostenv.svg)](https://david-dm.org/bevry/hostenv)
@@ -40,7 +39,7 @@ Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, O
 ### [Browserify](http://browserify.org/)
 - Use: `require('hostenv')`
 - Install: `npm install --save hostenv`
-- CDN URL: `//wzrd.in/bundle/hostenv@1.0.0`
+- CDN URL: `//wzrd.in/bundle/hostenv@1.0.1`
 
 ### [Ender](http://enderjs.com)
 - Use: `require('hostenv')`
@@ -96,8 +95,11 @@ No sponsors yet! Will you be the first?
 
 ### Contributors
 
-No contributors yet! Will you be the first?
-[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/bevry/hostenv/blob/master/CONTRIBUTING.md#files)
+These amazing people have contributed code to this project:
+
+- [Benjamin Lupton](https://github.com/balupton) <b@lupton.cc> — [view contributions](https://github.com/bevry/hostenv/commits?author=balupton)
+
+[Become a contributor!](https://github.com/bevry/hostenv/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
 

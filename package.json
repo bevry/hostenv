@@ -1,7 +1,7 @@
 {
   "title": "hostenv",
   "name": "hostenv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, OpenShift, and other service environments",
   "homepage": "https://github.com/bevry/hostenv",
   "license": {
@@ -19,7 +19,7 @@
     "paas"
   ],
   "badges": {
-    "travis": true,
+    "travis": false,
     "npm": true,
     "npmdownloads": true,
     "david": true,
@@ -34,7 +34,9 @@
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
-  "contributors": [],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
   "bugs": {
     "url": "https://github.com/bevry/hostenv/issues"
   },
@@ -48,7 +50,9 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "babel-eslint": "^4.0.5",
     "coffee-script": "^1.9.1",
+    "eslint": "^1.1.0",
     "projectz": "^0.5.0"
   },
   "main": "./index.js",

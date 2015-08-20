@@ -1,5 +1,8 @@
 # History
 
+## v1.0.2 August 20, 2015
+- Added support for https://github.com/wshearn/openshift-origin-cartridge-nodejs
+
 ## v1.0.1 August 15, 2015
 - Multiline file
 - Removed travis badge as there is no need for tests

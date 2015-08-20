@@ -1,7 +1,7 @@
 {
   "title": "hostenv",
   "name": "hostenv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, OpenShift, and other service environments",
   "homepage": "https://github.com/bevry/hostenv",
   "license": {
@@ -44,7 +44,7 @@
     "type": "git",
     "url": "http://github.com/bevry/hostenv.git"
   },
-  "browsers": true,
+  "browsers": false,
   "engines": {
     "node": ">=0.8"
   },

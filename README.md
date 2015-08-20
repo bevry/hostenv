@@ -36,15 +36,6 @@ Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, O
 - Use: `require('hostenv')`
 - Install: `npm install --save hostenv`
 
-### [Browserify](http://browserify.org/)
-- Use: `require('hostenv')`
-- Install: `npm install --save hostenv`
-- CDN URL: `//wzrd.in/bundle/hostenv@1.0.1`
-
-### [Ender](http://enderjs.com)
-- Use: `require('hostenv')`
-- Install: `ender add hostenv`
-
 <!-- /INSTALL -->
 
 

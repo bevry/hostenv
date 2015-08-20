@@ -28,6 +28,22 @@ Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, O
 <!-- /DESCRIPTION -->
 
 
+Supports:
+
+- `$PORT`, `$HOSTNAME`
+	- Heroku, Nodejitsu
+- `$OPENSHIFT_NODEJS_PORT`, `$OPENSHIFT_NODEJS_IP`
+	- [OpenShift's Official Node.js Cartridge](ttps://docs.openshift.org/origin-m4/oo_cartridge_guide.html#environment-variables-8)
+	- https://github.com/wshearn/openshift-origin-cartridge-nodejs
+- `$OPENSHIFT_IOJS_PORT`, `$OPENSHIFT_IOJS_IP`
+	- https://github.com/kyrylkov/openshift-iojs
+	- https://github.com/connyay/openshift-iojs
+- `$PORT`, `$VCAP_APP_PORT`, `$VCAP_APP_HOST`
+	- CloudFoundry
+- `$VMC_APP_PORT`, `$VMC_APP_HOST`
+	- AppFog (Legacy CloudFoundry)
+
+
 <!-- INSTALL/ -->
 
 ## Install

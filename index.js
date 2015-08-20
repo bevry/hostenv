@@ -1,13 +1,15 @@
 module.exports.PORT =
-	process.env.PORT /* Custom, Heroku, Nodejitsu */
-	|| process.env.OPENSHIFT_NODEJS_PORT /* OpenShift Official Cartridge */
-	|| process.env.OPENSHIFT_IOJS_PORT /* OpenShift: https://github.com/connyay/openshift-iojs */
-	|| process.env.VCAP_APP_PORT /* AppFog */
-	|| process.env.VMC_APP_PORT /* CloudFoundry */
+	process.env.PORT
+	|| process.env.OPENSHIFT_NODEJS_PORT
+	|| process.env.OPENSHIFT_IOJS_PORT
+	|| process.env.VCAP_APP_PORT
+	|| process.env.VMC_APP_PORT
 	|| null
 
 module.exports.HOSTNAME =
-	process.env.HOSTNAME /* Custom */
-	|| process.env.OPENSHIFT_NODEJS_IP /* OpenShift Official Cartridge */
-	|| process.env.OPENSHIFT_IOJS_IP /* OpenShift: https://github.com/connyay/openshift-iojs */
+	process.env.HOSTNAME
+	|| process.env.OPENSHIFT_NODEJS_IP
+	|| process.env.OPENSHIFT_IOJS_IP
+	|| process.env.VCAP_APP_HOST
+	|| process.env.VMC_APP_HOST
 	|| null

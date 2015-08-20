@@ -1,5 +1,8 @@
 # History
 
+## v1.0.3 August 20, 2015
+- Added support for CloudFoundry and AppFog host variables
+
 ## v1.0.2 August 20, 2015
 - Added support for https://github.com/wshearn/openshift-origin-cartridge-nodejs
 

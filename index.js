@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports.PORT =
 	process.env.PORT
 	|| process.env.OPENSHIFT_NODEJS_PORT

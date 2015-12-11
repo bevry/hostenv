@@ -7,7 +7,6 @@
 
 <!-- BADGES/ -->
 
-<span class="badge-travisci"><a href="http://travis-ci.org/bevry/hostenv" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/bevry/hostenv/master.svg" alt="Travis CI Build Status" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/hostenv" title="View this project on NPM"><img src="https://img.shields.io/npm/v/hostenv.svg" alt="NPM version" /></a></span>
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/hostenv" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/hostenv.svg" alt="NPM downloads" /></a></span>
 <span class="badge-daviddm"><a href="https://david-dm.org/bevry/hostenv" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/hostenv.svg" alt="Dependency Status" /></a></span>

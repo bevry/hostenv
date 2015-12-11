@@ -1,5 +1,8 @@
 # History
 
+## v1.0.5 2015 December 12
+- Removed travis badge as we have no need for it
+
 ## v1.0.4 2015 December 12
 - Updated internal conventions
 

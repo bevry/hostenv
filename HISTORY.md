@@ -1,5 +1,8 @@
 # History
 
+## v1.0.6 2018 September 4
+- Updated base files
+
 ## v1.0.5 2015 December 12
 - Removed travis badge as we have no need for it
 

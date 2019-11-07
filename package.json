@@ -76,7 +76,7 @@
   "dependencies": {},
   "devDependencies": {
     "assert-helpers": "^4.5.1",
-    "eslint": "^5.5.0",
+    "eslint": "^6.6.0",
     "joe": "^2.0.2",
     "joe-reporter-console": "^2.0.2",
     "projectz": "^1.4.0",

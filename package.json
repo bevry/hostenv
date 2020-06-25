@@ -1,7 +1,7 @@
 {
   "title": "hostenv",
   "name": "hostenv",
-  "version": "3.8.0",
+  "version": "3.9.0",
   "description": "Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, OpenShift, and other service environments",
   "homepage": "https://github.com/bevry/hostenv",
   "license": "MIT",
@@ -89,15 +89,15 @@
   "type": "commonjs",
   "main": "source/index.js",
   "devDependencies": {
-    "@bevry/update-contributors": "^1.9.0",
-    "assert-helpers": "^6.8.0",
-    "eslint": "^7.3.0",
-    "eslint-config-bevry": "^3.8.0",
-    "eslint-config-prettier": "^6.7.0",
+    "@bevry/update-contributors": "^1.12.0",
+    "assert-helpers": "^6.13.0",
+    "eslint": "^7.3.1",
+    "eslint-config-bevry": "^3.13.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "kava": "^5.7.0",
     "prettier": "^2.0.5",
-    "projectz": "^2.9.0",
+    "projectz": "^2.10.1",
     "valid-directory": "^2.5.0"
   },
   "scripts": {

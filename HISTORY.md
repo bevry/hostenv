@@ -1,5 +1,12 @@
 # History
 
+## v3.14.0 2020 October 29
+
+-   Converted from JavaScript to TypeScript
+-   Changed Node.js engines from `>=10` to `>=4`
+-   Support for [Deno](https://deno.land) enabled via [make-deno-edition](https://github.com/bevry/make-deno-edition)
+-   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+
 ## v3.13.0 2020 September 4
 
 -   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)

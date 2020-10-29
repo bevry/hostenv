@@ -36,17 +36,19 @@ Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, O
 Supports:
 
 -   `$PORT`, `$HOSTNAME` - Heroku, Nodejitsu
--   `$OPENSHIFT_NODEJS_PORT`, `$OPENSHIFT_NODEJS_IP` - [OpenShift's Official Node.js Cartridge](ttps://docs.openshift.org/origin-m4/oo_cartridge_guide.html#environment-variables-8) - https://github.com/wshearn/openshift-origin-cartridge-nodejs
--   `$OPENSHIFT_IOJS_PORT`, `$OPENSHIFT_IOJS_IP` - https://github.com/kyrylkov/openshift-iojs - https://github.com/connyay/openshift-iojs
+-   `$OPENSHIFT_NODEJS_PORT`, `$OPENSHIFT_NODEJS_IP` - [1](https://docs.openshift.org/origin-m4/oo_cartridge_guide.html#environment-variables-8), [2](https://github.com/wshearn/openshift-origin-cartridge-nodejs)
+-   `$OPENSHIFT_IOJS_PORT`, `$OPENSHIFT_IOJS_IP` - [1](https://github.com/kyrylkov/openshift-iojs), [2](https://github.com/connyay/openshift-iojs)
 -   `$PORT`, `$VCAP_APP_PORT`, `$VCAP_APP_HOST` - CloudFoundry
 -   `$VMC_APP_PORT`, `$VMC_APP_HOST` - AppFog (Legacy CloudFoundry)
 
 ## Usage
 
+[Complete API Documentation.](http://master.hostenv.bevry.surge.sh/docs/globals.html)
+
 ```javascript
-const hostenv = require('hostenv')
-const PORT = hostenv.PORT || 8080
-const HOSTNAME = hostenv.HOSTNAME || '0.0.0.0'
+const { PORT, HOSTNAME } = require('hostenv')
+const port = PORT || 8080
+const hostname = HOSTNAME || '0.0.0.0'
 ```
 
 <!-- INSTALL/ -->
@@ -60,12 +62,21 @@ const HOSTNAME = hostenv.HOSTNAME || '0.0.0.0'
 <li>Require: <code>const pkg = require('hostenv')</code></li>
 </ul>
 
+<a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js"><h3>Deno</h3></a>
+
+``` typescript
+import * as pkg from 'https://unpkg.com/hostenv@^3.14.0/edition-deno/index.ts'
+```
+
 <h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>hostenv</code> aliases <code>hostenv/source/index.js</code></li>
-<li><code>hostenv/source/index.js</code> is <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> source code for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> 10 || 12 || 13 || 14 with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li></ul>
+<ul><li><code>hostenv/source/index.ts</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> source code with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
+<li><code>hostenv</code> aliases <code>hostenv/edition-esnext/index.js</code></li>
+<li><code>hostenv/edition-esnext/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> 4 || 6 || 8 || 10 || 12 || 14 || 15 with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
+<li><code>hostenv/edition-esnext-esm/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> 12 || 14 || 15 with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
+<li><code>hostenv/edition-deno/index.ts</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> source code made to be compatible with <a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative to Node.js">Deno</a></li></ul>
 
 <!-- /INSTALL -->
 

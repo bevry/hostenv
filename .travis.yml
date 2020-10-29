@@ -2,10 +2,13 @@ version: ~> 1.0
 sudo: false
 language: node_js
 node_js:
+  - '4'
+  - '6'
+  - '8'
   - '10'
   - '12'
-  - '13'
   - '14'
+  - '15'
 matrix:
   fast_finish: true
   allow_failures: []
@@ -21,8 +24,11 @@ before_script:
 after_success:
   - >-
     eval "$(curl -fsSL
+    https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/surge.bash)"
+  - >-
+    eval "$(curl -fsSL
     https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/node-publish.bash)"
 notifications:
   email:
     recipients: >-
-      sVtazDVkaSpiN4UbenYMv5UipD4+1Pa2jr3b9/oj8hlPGH4oUo+uLltz2k7A1DhdIfn8X9iCHOkvLCEpdM3d/IiHpStx+hHeIkRBxQm3W3bG2lWKdFPQnGb116ECI427piWSDsiAndadtqmc8MyK7r9+3d/9WBe6QhR8YuCkba0rhyjRXLoOIps/pGn12KtCSSEl8hukmO7DEzIy85K3IPz3jy6DQf9fRhbpa9ckGHBO/oJ1H2D4oj9uUynD2DHMsSsCmx/fXIv115C0DR1iF/zoxVZkoffDMkeHrgSQeZyxt2y3IHf9dPrl7HjfzQkhOpJMg0LPfwxWvZ4RRr5yB0CGLf3UE8OGEZRboR8gEDh4KurscB4mxOevgPsmVI0Id0LmeZh7aAIB3jXAwmPR3Pb1l6CWJQsH0WDH6eHcPxVLctnBLOh7XQ0LEQQp3kjNiBV8p9wEQXBdBMXvURv/Z7pqBmBguLW+lI8PQih2QZbX6UUTAVLL+mVOv4go8EVdNqJVmsH+GZgWYeks8ZC6AWQdTCNKbTfNEadvum4n3jSC2SnD4gX4oWbmNHaV0kyTUKNhbecjh3MRkYIOn6R+0aMkxFS3JWgaAvjQY3GIOPpcRx6virxMXm5qv16T8Qp51B+GG/PpRgUc3yGFGrYAmfI+QuXA4h2my3iVqpcW8g0=
+      lNwLvURM7yLXsI45bNm3PgVrcxKe9OywRdhWwiL9yQRK/Eev+cNJdiWnXOc8vHE4Z+JvhnvlTFU48bKWPfyvAgizZKjdUSMR07NgqQKfLkJEg4KUcWUVBPoA0fsF8HH0Vho7ppDqwFPwIEJQWiMtHw1eMiXQQoXwZhrQAa5cptvY6AtO3iqO/EsYMFVKcC+ite6T/KiokBBv+BfN3nCiz20UU7uRzGFUepzp9lagaqddwX17OU/B5V0BZkTqd3cttkkIyyV7J+IRhhISGLOYbjfTpiB3h+cfkd9JyY5L7+sSMS8N/vapythUl4BxcI1/eHYu9e4Ev3SmNinF0ngfVuBdukRr03Mwqo+JkgQrhOBGBMuEd1LLZkRLfwWXpRKwEfDCODIQDkgSCK19e1mS9t6snb/pF7xED+SqPSjtVMmylk6Bj8X4r9TGuDTiedyutDRK8GGw1ucNCME9bc3FaI1CA7BCAdusnDhheivdGYNN8A67SasoCLmBJj3wCoKjSxKwp1PoXU0+ULqkuzr5qBGM4nXAZHsmWFMsBY5904qcOeK+plHp+PqjKKOKHw38CTN6BN0YDqwbRL8AFickkNUb7lNz8/DUm7TsIJPoawnsGmrjxqjnOhZI6vte0ZtBAyTFUJRLhnx3CIUm8VtV/gbMSR4IcO50cQN/6H5NLdM=

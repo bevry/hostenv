@@ -1,6 +1,6 @@
 {
   "name": "hostenv",
-  "version": "3.16.0",
+  "version": "3.17.0",
   "description": "Exports the correct PORT and HOSTNAME values for Heroku, AppFog, CloudFoundry, OpenShift, and other service environments",
   "homepage": "https://github.com/bevry/hostenv",
   "license": "MIT",
@@ -92,7 +92,7 @@
       "engines": false
     },
     {
-      "description": "TypeScript compiled against ES2019 for Node.js 4 || 6 || 8 || 10 || 12 || 14 with Require for modules",
+      "description": "TypeScript compiled against ES2019 for Node.js 4 || 6 || 8 || 10 || 12 || 14 || 16 with Require for modules",
       "directory": "edition-es2019",
       "entry": "index.js",
       "tags": [
@@ -102,12 +102,12 @@
         "require"
       ],
       "engines": {
-        "node": "4 || 6 || 8 || 10 || 12 || 14",
+        "node": "4 || 6 || 8 || 10 || 12 || 14 || 16",
         "browsers": false
       }
     },
     {
-      "description": "TypeScript compiled against ES2019 for Node.js 12 || 14 with Import for modules",
+      "description": "TypeScript compiled against ES2019 for Node.js 12 || 14 || 16 with Import for modules",
       "directory": "edition-es2019-esm",
       "entry": "index.js",
       "tags": [
@@ -117,7 +117,7 @@
         "import"
       ],
       "engines": {
-        "node": "12 || 14",
+        "node": "12 || 14 || 16",
         "browsers": false
       }
     },
@@ -147,12 +147,12 @@
   },
   "deno": "edition-deno/index.ts",
   "devDependencies": {
-    "@bevry/update-contributors": "^1.18.0",
+    "@bevry/update-contributors": "^1.19.0",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.28.5",
     "assert-helpers": "^8.2.0",
     "eslint": "^7.31.0",
-    "eslint-config-bevry": "^3.23.0",
+    "eslint-config-bevry": "^3.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "kava": "3.2.0",

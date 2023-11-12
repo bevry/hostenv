@@ -1,5 +1,9 @@
 # History
 
+## v4.1.0 2023 November 13
+
+-   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+
 ## v4.0.1 2023 November 2
 
 -   Rerelease of v3.19.0 as v4.0.1 due to a v4.0.0 release that incorrectly constricted node.js engine support.

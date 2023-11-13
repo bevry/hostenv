@@ -7,7 +7,7 @@ export const PORT: number | null =
 			env.OPENSHIFT_NODEJS_PORT ||
 			env.OPENSHIFT_IOJS_PORT ||
 			env.VCAP_APP_PORT ||
-			env.VMC_APP_PORT,
+			env.VMC_APP_PORT
 	) || null
 
 /** The hostname that the environment wishes for you to use. */
@@ -17,5 +17,5 @@ export const HOSTNAME: string | null =
 			env.OPENSHIFT_NODEJS_IP ||
 			env.OPENSHIFT_IOJS_IP ||
 			env.VCAP_APP_HOST ||
-			env.VMC_APP_HOST,
+			env.VMC_APP_HOST
 	) || null

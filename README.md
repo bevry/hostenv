@@ -62,7 +62,7 @@ const hostname = HOSTNAME || '0.0.0.0'
 ### [Deno](https://deno.land "Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js")
 
 ``` typescript
-import * as pkg from 'https://unpkg.com/hostenv@^4.8.0/edition-deno/index.ts'
+import * as pkg from 'https://unpkg.com/hostenv@^4.9.0/edition-deno/index.ts'
 ```
 ### [Editions](https://editions.bevry.me "Editions are the best way to produce and consume packages you care about.")
 
